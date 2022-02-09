@@ -1,11 +1,15 @@
 {
+  "name": "hypebeast",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
     "prepare": "husky install",
-    "build": "lerna run build"
+    "build": "lerna run build",
+    "lint": "lerna run lint",
+    "format": "lerna run format",
+    "pre-commit": "yarn build && yarn lint && yarn format"
   },
   "devDependencies": {
     "lerna": "^4.0.0",
