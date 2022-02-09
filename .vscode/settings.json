@@ -5,7 +5,6 @@
     "*/**/node_modules": true,
     "*/**/dist": true,
     "*/**/build": true,
-    "*/**/logs": true,
     "yarn.lock": true
   }
 }
