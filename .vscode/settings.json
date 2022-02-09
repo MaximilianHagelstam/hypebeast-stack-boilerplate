@@ -1,0 +1,11 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "eslint.workingDirectories": ["packages/api"],
+  "search.exclude": {
+    "node_modules": true,
+    "*/**/dist": true,
+    "*/**/build": true,
+    "*/**/logs": true,
+    "yarn.lock": true
+  }
+}
