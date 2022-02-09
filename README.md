@@ -29,7 +29,7 @@ yarn build
 #### Frontend
 
 - TypeScript
-- Next.js
+- React
 
 #### Other
 
