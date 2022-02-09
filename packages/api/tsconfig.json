@@ -5,7 +5,6 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "lib": ["dom", "es6", "es2017", "esnext.asynciterable"],
-    "skipLibCheck": true,
     "outDir": "dist",
     "rootDir": "src",
     "baseUrl": "."
