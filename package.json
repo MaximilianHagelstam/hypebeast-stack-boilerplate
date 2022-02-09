@@ -8,7 +8,6 @@
     "build": "lerna run build"
   },
   "devDependencies": {
-    "husky": "^7.0.4",
     "lerna": "^4.0.0"
   }
 }

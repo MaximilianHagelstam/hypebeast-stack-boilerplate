@@ -1,7 +1,0 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
-echo '💅Building all packages'
-yarn build
-
-echo '✅ Ready to commit ✅'
