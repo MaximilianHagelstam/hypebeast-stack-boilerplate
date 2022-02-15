@@ -1,5 +1,5 @@
 {
-  "name": "@root/web",
+  "name": "@remarc/web",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

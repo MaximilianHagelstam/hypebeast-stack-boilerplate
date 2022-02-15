@@ -1,5 +1,5 @@
 import { createConnection } from "typeorm";
-import Post from "../entities/Post";
+import Note from "../entities/Note";
 import { DB_URL, IS_PROD } from "./constants";
 import logger from "./logger";
 
@@ -13,7 +13,7 @@ const connectDb = async () => {
       ssl: {
         rejectUnauthorized: false,
       },
-      entities: [Post],
+      entities: [Note],
     });
     logger.info("Connected to database");
   } catch (err) {

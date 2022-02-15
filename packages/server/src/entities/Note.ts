@@ -1,12 +1,12 @@
 import { BaseEntity, Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
 
 @Entity()
-export default class Post extends BaseEntity {
+export default class Note extends BaseEntity {
   @PrimaryGeneratedColumn()
   id!: number;
 
   @Column()
-  title!: string;
+  body!: string;
 
   @CreateDateColumn()
   createdAt!: Date;
