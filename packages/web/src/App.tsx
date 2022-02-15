@@ -1,5 +1,11 @@
+import Container from "./components/styles/Container";
+
 const App = () => {
-  return <h1>Hello team!</h1>;
+  return (
+    <Container>
+      <h1>Hello team!</h1>
+    </Container>
+  );
 };
 
 export default App;
