@@ -7,9 +7,13 @@ const validateRequest =
     try {
       const validatedBody = await schema.validate(req.body);
       req.body = validatedBody;
-      next();
+      return next();
     } catch (err) {
-      res.status(400).json({ error: JSON.stringify(err) });
+      if (err instanceof Error) {
+        return res.status(400).json({ error: err.message });
+      }
+
+      return res.status(400).json({ error: "Request body does not match the validation schema" });
     }
   };
 

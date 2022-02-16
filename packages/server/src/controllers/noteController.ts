@@ -6,7 +6,7 @@ const findAll = async (_req: Request, res: Response) => {
     const notes = await Note.find();
     return res.json({ notes });
   } catch (err) {
-    return res.json({ error: JSON.stringify(err) });
+    return res.status(400).json({ error: "Cannot find notes" });
   }
 };
 
@@ -17,7 +17,7 @@ const create = async (req: Request, res: Response) => {
     const note = await Note.create({ body: requestBody.body }).save();
     return res.json({ note });
   } catch (err) {
-    return res.json({ error: JSON.stringify(err) });
+    return res.status(400).json({ error: "Cannot create note" });
   }
 };
 
