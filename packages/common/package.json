@@ -2,6 +2,7 @@
   "name": "@remarc/common",
   "version": "1.0.0",
   "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "license": "MIT",
   "scripts": {
     "start": "node dist/index.js",
@@ -9,6 +10,9 @@
     "build": "tsc",
     "lint": "eslint --fix ./src",
     "format": "prettier --write ./src"
+  },
+  "dependencies": {
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/node": "^17.0.18",
