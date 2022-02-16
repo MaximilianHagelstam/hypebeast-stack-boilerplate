@@ -7,6 +7,7 @@ const validateRequest =
     try {
       const validatedBody = await schema.validate(req.body);
       req.body = validatedBody;
+
       return next();
     } catch (err) {
       if (err instanceof Error) {
