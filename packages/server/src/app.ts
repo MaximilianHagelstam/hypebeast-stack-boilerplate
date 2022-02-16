@@ -4,6 +4,7 @@ import helmet from "helmet";
 import morgan from "morgan";
 import connectDb from "./config/connectDb";
 import indexRoutes from "./routes/indexRoutes";
+import noteRoutes from "./routes/noteRoutes";
 
 void connectDb();
 
@@ -15,5 +16,6 @@ app.use(helmet());
 app.use(cors());
 
 app.use("/", indexRoutes);
+app.use("/api/notes", noteRoutes);
 
 export default app;
