@@ -1,5 +1,5 @@
 {
-  "name": "remarc",
+  "name": "hypebeast",
   "private": true,
   "workspaces": [
     "packages/*"

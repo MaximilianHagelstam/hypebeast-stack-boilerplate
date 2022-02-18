@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-misused-promises */
-import { createNoteSchema } from "@remarc/common";
+import { createNoteSchema } from "@hypebeast/common";
 import express from "express";
 import noteController from "../controllers/noteController";
 import validateRequest from "../middleware/validateRequest";
