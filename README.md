@@ -1,4 +1,4 @@
-# Hypebeast Stack Boilerplate
+# Hypebeast Stack Starter
 
 ## Setup
 
@@ -16,7 +16,7 @@ yarn
 yarn build
 ```
 
-## Stack
+## Tech
 
 #### Backend
 
